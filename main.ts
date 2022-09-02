@@ -71,7 +71,7 @@ namespace majidHasanpour {
     * @param direction Move Forward or Reverse
     * @param speed speed of motor between 0 and 100. eg: 60
     */
-    //% blockId="BBMove" block="motor(s)%direction|at speed%speed|\\%"
+    //% blockId="BBLeft" block="motor(s)%direction|at speed%speed|\\%"
     //% speed.min=0 speed.max=100
     //% weight=80
     //% subcategory=Motor
@@ -86,7 +86,7 @@ namespace majidHasanpour {
     * @param direction Move Forward or Reverse
     * @param speed speed of motor between 0 and 100. eg: 60
     */
-    //% blockId="BBMove" block="motor(s)%direction|at speed%speed|\\%"
+    //% blockId="BBRight" block="motor(s)%direction|at speed%speed|\\%"
     //% speed.min=0 speed.max=100
     //% weight=60
     //% subcategory=Motor
@@ -96,7 +96,6 @@ namespace majidHasanpour {
 
     /**
     * Stop robot by coasting slowly to a halt or braking
-    * @param mode Brakes on or off
     */
     //% blockId="stop" block="stopMotor"
     //% weight=60
