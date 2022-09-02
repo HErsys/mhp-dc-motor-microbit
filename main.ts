@@ -25,16 +25,7 @@ namespace majidHasanpour {
         //% block="reverse"
         Reverse
     }
-    /**
-      * Move individual motors forward or reverse
-      * @param motor motor to drive
-      * @param direction select forwards or reverse
-      * @param speed speed of motor between 0 and 100. eg: 60
-      */
-    //% block="start%motor|motor(s)%direction|at speed%speed|\\%"
-    //% weight=50
-    //% speed.min=0 speed.max=100
-    //% subcategory=Motor
+
     export function startMotor(
         motor: Motor,
         direction: Direction,
@@ -65,17 +56,31 @@ namespace majidHasanpour {
         }
     }
 
+
+    /**
+    * Move robot to forward
+    * @param speed speed of motor between 0 and 100. eg: 60
+    */
+    //% block="move forward |at speed%speed|\\%"
+    //% speed.min=0 speed.max=100
+    //% weight=80
+    //% subcategory=Motor
+    export function move(speed: number): void {
+        startMotor(Motor.Direct, Direction.Forward, speed);
+    }
+    
+
     /**
     * Move robot to left
     * @param direction Move Forward or Reverse
     * @param speed speed of motor between 0 and 100. eg: 60
     */
-    //% block="motor(s)%direction|at speed%speed|\\%"
+    //% block="move right |at speed%speed|\\%"
     //% speed.min=0 speed.max=100
     //% weight=80
     //% subcategory=Motor
     export function goLeft(direction: Direction, speed: number): void {
-        startMotor(Motor.Left, direction, speed);
+        startMotor(Motor.Left, Direction.Forward, speed);
     }
 
 
@@ -85,12 +90,24 @@ namespace majidHasanpour {
     * @param direction Move Forward or Reverse
     * @param speed speed of motor between 0 and 100. eg: 60
     */
-    //% block="motor(s)%direction|at speed%speed|\\%"
+    //% block="move right |at speed%speed|\\%"
     //% speed.min=0 speed.max=100
     //% weight=60
     //% subcategory=Motor
     export function goRight(direction: Direction, speed: number): void {
-        startMotor(Motor.Right, direction, speed);
+        startMotor(Motor.Right, Direction.Forward, speed);
+    }
+
+    /**
+    * Move robot to reverse
+    * @param speed speed of motor between 0 and 100. eg: 60
+    */
+    //% block="move reverse |at speed%speed|\\%"
+    //% speed.min=0 speed.max=100
+    //% weight=80
+    //% subcategory=Motor
+    export function back(speed: number): void {
+        startMotor(Motor.Direct, Direction.Reverse, speed);
     }
 
     /**
