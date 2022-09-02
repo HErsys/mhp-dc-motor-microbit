@@ -29,9 +29,9 @@ namespace majidHasanpour {
       * Move individual motors forward or reverse
       * @param motor motor to drive
       * @param direction select forwards or reverse
-      * @param speed speed of motor between 0 and 100. eg: 80
+      * @param speed speed of motor between 0 and 100. eg: 60
       */
-    //% blockId="startMotor" block="startMotor%direction|direction%direction|at speed%speed|\\%"
+    //% blockId="BBMove" block="start%motor|motor(s)%direction|at speed%speed|\\%"
     //% weight=50
     //% speed.min=0 speed.max=100
     //% subcategory=Motor
