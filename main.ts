@@ -12,7 +12,7 @@ namespace majidHasanpour {
         Left,
         //% block="right"
         Right,
-        //% block="both"
+        //% block="direct"
         Direct
     }
 
@@ -31,7 +31,7 @@ namespace majidHasanpour {
       * @param direction select forwards or reverse
       * @param speed speed of motor between 0 and 100. eg: 60
       */
-    //% blockId="BBMove" block="start%motor|motor(s)%direction|at speed%speed|\\%"
+    //% block="start%motor|motor(s)%direction|at speed%speed|\\%"
     //% weight=50
     //% speed.min=0 speed.max=100
     //% subcategory=Motor
@@ -65,13 +65,12 @@ namespace majidHasanpour {
         }
     }
 
-
     /**
     * Move robot to left
     * @param direction Move Forward or Reverse
     * @param speed speed of motor between 0 and 100. eg: 60
     */
-    //% blockId="BBLeft" block="motor(s)%direction|at speed%speed|\\%"
+    //% block="motor(s)%direction|at speed%speed|\\%"
     //% speed.min=0 speed.max=100
     //% weight=80
     //% subcategory=Motor
@@ -86,7 +85,7 @@ namespace majidHasanpour {
     * @param direction Move Forward or Reverse
     * @param speed speed of motor between 0 and 100. eg: 60
     */
-    //% blockId="BBRight" block="motor(s)%direction|at speed%speed|\\%"
+    //% block="motor(s)%direction|at speed%speed|\\%"
     //% speed.min=0 speed.max=100
     //% weight=60
     //% subcategory=Motor
