@@ -71,7 +71,7 @@ namespace majidHasanpour {
     * @param direction Move Forward or Reverse
     * @param speed speed of motor between 0 and 100. eg: 60
     */
-    //% blockId="mhp-goLeft" block="goLeft%direction|at speed%speed|\\%"
+    //% blockId="BBMove" block="motor(s)%direction|at speed%speed|\\%"
     //% speed.min=0 speed.max=100
     //% weight=80
     //% subcategory=Motor
@@ -86,7 +86,7 @@ namespace majidHasanpour {
     * @param direction Move Forward or Reverse
     * @param speed speed of motor between 0 and 100. eg: 60
     */
-    //% blockId="mhp-goRight" block="goRight%direction|at speed%speed|\\%"
+    //% blockId="BBMove" block="motor(s)%direction|at speed%speed|\\%"
     //% speed.min=0 speed.max=100
     //% weight=60
     //% subcategory=Motor
