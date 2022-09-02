@@ -79,7 +79,7 @@ namespace majidHasanpour {
     //% speed.min=0 speed.max=100
     //% weight=80
     //% subcategory=Motor
-    export function goLeft(direction: Direction, speed: number): void {
+    export function goLeft(speed: number): void {
         startMotor(Motor.Left, Direction.Forward, speed);
     }
 
@@ -94,7 +94,7 @@ namespace majidHasanpour {
     //% speed.min=0 speed.max=100
     //% weight=60
     //% subcategory=Motor
-    export function goRight(direction: Direction, speed: number): void {
+    export function goRight(speed: number): void {
         startMotor(Motor.Right, Direction.Forward, speed);
     }
 
